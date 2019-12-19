@@ -100,7 +100,7 @@ group :test do
   gem "capybara"
   gem "capybara-screenshot"
   gem "chromedriver-helper"
-  gem "docker-api"
+  gem "docker-api", ">= 1.34.2"
   gem "json-schema"
   gem "poltergeist", require: false
   gem "rails-controller-testing"
