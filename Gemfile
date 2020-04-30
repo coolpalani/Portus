@@ -106,7 +106,7 @@ group :test do
   gem "rails-controller-testing"
   gem "selenium-webdriver"
   gem "shoulda"
-  gem "simplecov", require: false
+  gem "simplecov", ">= 0.16.1", require: false
   gem "timecop"
   gem "vcr"
   gem "webmock", require: false
