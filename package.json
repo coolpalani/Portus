@@ -4,7 +4,9 @@
     "eslint": "eslint --max-warnings 0 --ext .js,.vue ./app/assets/javascripts",
     "webpack": "webpack --watch --config config/webpack.js",
     "test": "cross-env NODE_ENV=test mocha-webpack --webpack-config ./config/webpack.js --require ./spec/javascripts/setup.js ./spec/javascripts/**/*.spec.js ./spec/javascripts/**/**/*.spec.js",
-    "cover": "cross-env NODE_ENV=test nyc --reporter=text --reporter=html yarn test"
+    "cover": "cross-env NODE_ENV=test nyc --reporter=text --reporter=html yarn test",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "nyc": {
     "include": [
@@ -48,7 +50,7 @@
     "bootstrap-sass": "^3.3.6",
     "core-js": "^2.5.7",
     "dayjs": "^1.7.4",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "keycode-js": "^1.0.3",
     "lodash": "^4.17.10",
     "query-string": "^5.1.1",
@@ -57,6 +59,8 @@
     "vue-multiselect": "shentao/vue-multiselect#496937bee",
     "vue-resource": "^1.5.1",
     "vue-template-compiler": "^2.5.16",
-    "vuelidate": "^0.7.4"
-  }
+    "vuelidate": "^0.7.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
