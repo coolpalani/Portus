@@ -22,7 +22,7 @@ gem "omniauth-openid"
 gem "omniauth_openid_connect"
 gem "public_activity", "~> 1.6.3"
 gem "pundit"
-gem "rails", "~> 5.2.0"
+gem "rails", "~> 5.2.2"
 gem "redcarpet"
 gem "sassc-rails"
 gem "search_cop"
@@ -102,7 +102,7 @@ group :test do
   gem "chromedriver-helper"
   gem "docker-api"
   gem "json-schema"
-  gem "poltergeist", require: false
+  gem "poltergeist", ">= 1.18.1", require: false
   gem "rails-controller-testing"
   gem "selenium-webdriver"
   gem "shoulda"
